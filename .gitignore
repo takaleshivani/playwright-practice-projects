@@ -1,0 +1,20 @@
+
+# Playwright
+node_modules/
+/test-results/
+/playwright-report/
+/blob-report/
+/playwright/.cache/
+/playwright/.auth/
+.auth/
+
+# .gitignore
+node_modules/
+.env
+.vscode/
+.idea/
+.DS_Store
+reports/
+playwright-report/
+coverage/
+dist/
