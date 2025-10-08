@@ -4,7 +4,7 @@ This repository documents my step-by-step journey in mastering Playwright and AI
 # Levels
 | Level | Topic | Branch |
 |-------|--------|--------|
-| 1 | Setup & Basics |
+| 1 | Setup & Basics | [https://github.com/takaleshivani/playwright-practice-projects/tree/level-1-setup-basice]
 | 2 | Locators & Assertions |
 | 3 | Page Object Model |
 
