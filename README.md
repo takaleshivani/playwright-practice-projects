@@ -29,7 +29,6 @@ This repository is part of my structured journey to master **Playwright** and **
 
 - ✅ Installing Playwright  
 - ✅ Configuring Playwright project with `playwright.config.ts`  
-- ✅ Writing and running a simple test to verify a page title  
-- ✅ Executing tests in headless mode  
+- ✅ Writing and running a simple test 
 - ✅ Generating basic HTML reports
 - ✅ Learn basics of API & completing 2 challenge programs
