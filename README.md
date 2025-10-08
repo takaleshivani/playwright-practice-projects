@@ -1,16 +1,16 @@
 # 🎯 Playwright Practice Project — Level 1: Setup & Basics
 
-Welcome to **Level 1** of my Playwright Practice Projects!  
-This repository is part of my structured journey to master **Playwright** and **modern test automation frameworks** by building real, progressive projects with AI-assisted coding using **GitHub Copilot**.
+Welcome to **Level 2** of my Playwright Practice Projects!  
+This branch focuses on building **reusable and maintainable test structures** using **abstractions, fixtures, and handling more complex scenarios**.  
 
 ---
 
 ## 🧠 Objective
 
-- Learn Playwright fundamentals  
-- Set up the environment  
-- Write and execute the first basic test case  
-- Explore how GitHub Copilot assists in writing test scripts faster and more efficiently  
+- Implement **test abstractions** for reusability  
+- Use **fixtures** for setup and teardown (e.g., login, test data)  
+- Write **complex end-to-end test scenarios** with multiple steps  
+- Continue leveraging **GitHub Copilot** for AI-assisted code suggestions  
 
 ---
 
@@ -27,9 +27,7 @@ This repository is part of my structured journey to master **Playwright** and **
 
 ## 🧪 What This Level Covers
 
-- ✅ Installing Playwright  
-- ✅ Configuring Playwright project with `playwright.config.ts`  
-- ✅ Writing and running a simple test to verify a page title  
-- ✅ Executing tests in headless mode  
-- ✅ Generating basic HTML reports
-- ✅ Learn basics of API & completing 2 challenge programs
+- ✅ Creating **helper functions and page abstractions**  
+- ✅ Using **fixtures** for common setup (login, test data, environment setup)  
+- ✅ Handling **complex user workflows** with multiple steps  
+- ✅ Improved **test maintainability** with reusable components
