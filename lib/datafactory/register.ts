@@ -11,16 +11,16 @@ export async function registerUser(email: string, password: string) {
     data: {
       first_name: "Test",
       last_name: "User",
-      dob: "2001-01-01",
-      phone: "5555555555",
+      dob: "1995-01-01",
+      phone: "9242344522",
       email: email,
       password: password,
       address: {
-        street: "101 Testing Way",
-        city: "New York",
-        state: "New York",
-        country: "US",
-        postal_code: "55555",
+        street: "Wakad",
+        city: "Pune",
+        state: "Maharashtra",
+        country: "IN",
+        postal_code: "411057",
       },
     },
   });
