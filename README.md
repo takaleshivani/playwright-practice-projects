@@ -27,7 +27,8 @@ This branch focuses on building **reusable and maintainable test structures** us
 
 ## 🧪 What This Level Covers
 
-- ✅ Creating **helper functions and page abstractions**  
+- ✅ Creating **helper functions and page abstractions** 
+- ✅ Creating **environment file,installing dotenv and importing dotenv in playwright.config.ts**   
 - ✅ Using **fixtures** for common setup (login, test data, environment setup)  
 - ✅ Handling **complex user workflows** with multiple steps  
 - ✅ Improved **test maintainability** with reusable components

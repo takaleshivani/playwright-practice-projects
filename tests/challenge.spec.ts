@@ -1,4 +1,5 @@
 import {test, expect} from '@playwright/test';
+import { randomState } from '../lib/helpers/states';
 
 /**
  * Checkout Challenge Test
@@ -16,7 +17,7 @@ test.describe('Checkout Challenge', () => {
     
 
     test('Add product to cart', async ({ page,headless }) => {
-    await page.getByTestId('product-01K70W668GCKKHDGB27FJ5VQX9').click();
+    await page.getByTestId('product-01K73J0SAS5BSA9D613F7P1ZBT').click();
     await page.locator('[data-test="add-to-cart"]').click();
     await page.locator('div').filter({ hasText: 'Product added to shopping' }).nth(2).click();
     await page.locator('[data-test="nav-cart"]').click();
@@ -25,7 +26,7 @@ test.describe('Checkout Challenge', () => {
     await expect(
       page.locator(".step-indicator").filter({ hasText: "2" })
     ).toHaveCSS("background-color", "rgb(51, 153, 51)");
-    await page.getByTestId("state").fill("Sydney");
+    await page.getByTestId("state").fill(randomState());
     await page.getByTestId("postal_code").fill("98765");
     await page.getByTestId("proceed-3").click();
     await expect(page.getByTestId("finish")).toBeDisabled();
@@ -70,6 +71,7 @@ test.describe('API challenge', () => {
                 "Donec malesuada tempus purus. Integer sit amet arcu magna. Sed vel laoreet ligula, non sollicitudin ex. Mauris euismod ac dolor venenatis lobortis. Aliquam iaculis at diam nec accumsan. Ut sodales sed elit et imperdiet. Maecenas vitae molestie mauris. Integer quis placerat libero, in finibus diam. Interdum et malesuada fames ac ante ipsum primis in faucibus."
         );
         expect(responseBody.id).toBe(productId);
+        expect(responseBody.price).toBeNumber();
     }
     );
 });
