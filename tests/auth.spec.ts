@@ -16,13 +16,15 @@ setup("Create customer 01 auth", async ({ page }) => {
 
     await loginPage.goto();
 
-    //fill email
-    await loginPage.emailInput.fill(username);
-    //fill password
-    await loginPage.passwordInput.fill(password);
-    //click 
-    await loginPage.loginInButton.click();
+    // //fill email
+    // await loginPage.emailInput.fill(username);
+    // //fill password
+    // await loginPage.passwordInput.fill(password);
+    // //click 
+    // await loginPage.loginInButton.click();
+    await loginPage.login(username, password);
 
     await expect(page.getByTestId("nav-menu")).toContainText("Jane Doe");
     await page.context().storageState({ path: customer01File });
 });
+
