@@ -1,6 +1,6 @@
 import { test, expect } from '@playwright/test';
-import { registerUser } from '../../lib/datafactory/register';
-import {LoginPage } from '../../lib/pages/login.page';
+import { registerUser } from "@datafactory/register";
+import {LoginPage } from '@pages/login/login.page';
 
 /**
  * Playwright test suite for login functionality.
