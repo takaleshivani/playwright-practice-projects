@@ -1,6 +1,7 @@
-import { test, expect } from '@playwright/test';
+// import {expect } from '@playwright/test';
 import { registerUser } from "@datafactory/register";
 import {LoginPage } from '@pages/login/login.page';
+import {test,expect} from "@fixtures/pages.fixture";
 
 /**
  * Playwright test suite for login functionality.
@@ -42,4 +43,17 @@ test("login with newly registered user", async ({ page }) => {
   await loginPage.login(email, password);
 
   await expect(page.getByTestId("nav-menu")).toContainText("Test User");
+});
+
+
+test("login with fixtures", async ({loginPage ,accountPage}) => {
+  const email = `test${Date.now()}@test.com`;
+  const password = "Sambhajinagar@1104";
+
+  await registerUser(email, password);
+
+  await loginPage.goto();
+  await loginPage.login(email, password);
+
+  await expect(accountPage.navMenu).toContainText("Test User");
 });

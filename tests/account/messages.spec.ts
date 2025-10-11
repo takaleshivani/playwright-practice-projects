@@ -1,8 +1,9 @@
-import {test,expect} from "@playwright/test";
+// import {test,expect} from "@playwright/test";
 import {LoginPage } from '@pages/login/login.page';
 import { registerUser } from "@datafactory/register";
 import {MessagePage} from "@pages/account/message.page";
 import { createMessageFromContactForm } from "@datafactory/messages";
+import {test,expect} from "@fixtures/pages.fixture";
 
 
 /**
@@ -13,7 +14,7 @@ import { createMessageFromContactForm } from "@datafactory/messages";
  * Validate the message in messages page
  * Reply to the message and validate the reply
  */
-test("customer reply to a message", async ({context, page}) => {
+test("customer reply to a message", async ({context, loginPage, accountPage,messagePage}) => {
     const timestamp = Date.now(); // to get the current timestamp
     const email = `new_user${timestamp}@gmail.com`;
     const password = 'Sambhajinagar@1104';
@@ -23,13 +24,14 @@ test("customer reply to a message", async ({context, page}) => {
 
     //Register a new user using api call
     await test.step('Register a new user', async () => {
-        const loginPage = new LoginPage(page);
+        // const loginPage = new LoginPage(page);
         await loginPage.goto();
         await registerUser(email, password);
         await loginPage.login(email, password);
-        await expect(page.getByTestId("nav-menu")).toContainText("Test User");
-
-        await page.context().storageState({path: messageUserAuthFile}); //to save the token in auth file
+        // await expect(page.getByTestId("nav-menu")).toContainText("Test User");
+        await expect(accountPage.navMenu).toContainText("Test User");
+        // await page.context().storageState({path: messageUserAuthFile}); //to save the token in auth file
+        await context.storageState({path: messageUserAuthFile}); //to save the token in auth file
     }); 
 
     //Create a message using api call from contact form
@@ -44,7 +46,7 @@ test("customer reply to a message", async ({context, page}) => {
     //Validate the message in messages page and reply to the message
     await test.step("validate and reply to a message"   , async () => {
         // Navigate to Messages page
-        const messagePage = new MessagePage(page);
+        // const messagePage = new MessagePage(page);
         await messagePage.goto();
         await expect(messagePage.table).toBeVisible();
         await expect(messagePage.table).toContainText(message.substring(0,20)); //validating part of the message
