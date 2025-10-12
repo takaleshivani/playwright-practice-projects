@@ -18,3 +18,4 @@ reports/
 playwright-report/
 coverage/
 dist/
+hars/
