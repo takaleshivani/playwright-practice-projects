@@ -2,7 +2,10 @@
   "name": "praticesoftwaretestingproject",
   "version": "1.0.0",
   "main": "index.js",
-  "scripts": {},
+  "scripts": {
+    "start": "cd bagel-shop && npm run start",
+    "install:bagel-shop": "cd bagel-shop && npm install"
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",

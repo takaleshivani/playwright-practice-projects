@@ -191,7 +191,7 @@ test("check for inputs without labels", async ({ page }) => {
 
 
 /**
- * Checks for broken images on the page.
+ *   Checks for broken images on the page.
  * - Finds all image elements with zero natural height or width.
  * - Asserts that there are no broken images present on the page.
  */
