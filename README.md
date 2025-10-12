@@ -1,16 +1,16 @@
 # 🎯 Playwright Practice Project — Level 1: Setup & Basics
 
 Welcome to **Level 2** of my Playwright Practice Projects!  
-This branch focuses on building **reusable and maintainable test structures** using **abstractions, fixtures, and handling more complex scenarios**.  
+This branch focuses on building **working with multiple windows,popups,alerts,dialogs and uploads and downloads file**.
 
 ---
 
 ## 🧠 Objective
 
-- Implement **test abstractions** for reusability  
-- Use **fixtures** for setup and teardown (e.g., login, test data)  
-- Write **complex end-to-end test scenarios** with multiple steps  
-- Continue leveraging **GitHub Copilot** for AI-assisted code suggestions  
+- Learn how to manage multiple windows and popups in your tests.
+- Understand how to handle alerts and dialogs.
+- Discover techniques for managing file uploads and downloads.
+- Explore strategies for interacting with difficult or complex elements.  
 
 ---
 
@@ -27,8 +27,6 @@ This branch focuses on building **reusable and maintainable test structures** us
 
 ## 🧪 What This Level Covers
 
-- ✅ Creating **helper functions and page abstractions** 
-- ✅ Creating **environment file,installing dotenv and importing dotenv in playwright.config.ts**   
-- ✅ Using **fixtures** for common setup (login, test data, environment setup)  
-- ✅ Handling **complex user workflows** with multiple steps  
-- ✅ Improved **test maintainability** with reusable components
+- ✅ Writing tests to handle multiple windows. 
+- ✅ Using functions to handle alerts and dialogs.
+- ✅ Handling **complex elements** with multiple approaches 
