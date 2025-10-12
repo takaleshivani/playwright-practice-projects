@@ -1,16 +1,15 @@
 # 🎯 Playwright Practice Project — Level 1: Setup & Basics
 
 Welcome to **Level 2** of my Playwright Practice Projects!  
-This branch focuses on building **reusable and maintainable test structures** using **abstractions, fixtures, and handling more complex scenarios**.  
+This branch focuses on **network routing,intercepting HTTP requests,Mocking HTTP requests and injecting JavaScript**. 
 
 ---
 
 ## 🧠 Objective
 
-- Implement **test abstractions** for reusability  
-- Use **fixtures** for setup and teardown (e.g., login, test data)  
-- Write **complex end-to-end test scenarios** with multiple steps  
-- Continue leveraging **GitHub Copilot** for AI-assisted code suggestions  
+- Understand how to intercept HTTP requests to control the data being sent and received.
+- Discover how to mock HTTP responses to test different scenarios.
+- Understand how to inject JavaScript into your tests.
 
 ---
 
@@ -27,8 +26,4 @@ This branch focuses on building **reusable and maintainable test structures** us
 
 ## 🧪 What This Level Covers
 
-- ✅ Creating **helper functions and page abstractions** 
-- ✅ Creating **environment file,installing dotenv and importing dotenv in playwright.config.ts**   
-- ✅ Using **fixtures** for common setup (login, test data, environment setup)  
-- ✅ Handling **complex user workflows** with multiple steps  
-- ✅ Improved **test maintainability** with reusable components
+- ✅ Creating tests to implement intercepting HTTP requests and mocking HTTP responses.
