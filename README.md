@@ -1,16 +1,15 @@
 # 🎯 Playwright Practice Project — Level 1: Setup & Basics
 
-Welcome to **Level 2** of my Playwright Practice Projects!  
-This branch focuses on building **reusable and maintainable test structures** using **abstractions, fixtures, and handling more complex scenarios**.  
+Welcome to **Level 3** of my Playwright Practice Projects!  
+This branch focuses on building **implementing BDD framework using Cucumber**.  
 
 ---
 
 ## 🧠 Objective
 
-- Implement **test abstractions** for reusability  
-- Use **fixtures** for setup and teardown (e.g., login, test data)  
-- Write **complex end-to-end test scenarios** with multiple steps  
-- Continue leveraging **GitHub Copilot** for AI-assisted code suggestions  
+- Learn to create a feature file where BDD scenarios are written using the Gherkin language.
+- Understand how to write clear and simple scenarios using Gherkin syntax, such as "Given", "When", and "Then". 
+- Install and use the Cucumber plugin in Visual Studio Code to write and manage your BDD scenario.  
 
 ---
 
@@ -22,13 +21,11 @@ This branch focuses on building **reusable and maintainable test structures** us
 | **TypeScript** | Strongly typed language for scalable test code |
 | **Node.js** | Runtime environment for running Playwright |
 | **VS Code + GitHub Copilot** | AI-assisted code suggestions and refactoring |
+|**Cucumber**| BDD testing framework |
 
 ---
 
 ## 🧪 What This Level Covers
 
-- ✅ Creating **helper functions and page abstractions** 
-- ✅ Creating **environment file,installing dotenv and importing dotenv in playwright.config.ts**   
-- ✅ Using **fixtures** for common setup (login, test data, environment setup)  
-- ✅ Handling **complex user workflows** with multiple steps  
-- ✅ Improved **test maintainability** with reusable components
+- ✅ Creating **feature,step definitions file**
+- ✅ Running BDD scenario using VS Code.
