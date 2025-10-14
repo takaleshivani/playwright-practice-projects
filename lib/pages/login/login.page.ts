@@ -8,9 +8,12 @@ export class LoginPage {
 
    constructor(page: Page) {
       this.page = page;
-      this.emailInput = page.getByTestId('email');
-      this.passwordInput = page.getByTestId('password');
-      this.loginInButton = page.getByTestId('login-submit');
+      // this.emailInput = page.getByTestId('email');
+      // this.passwordInput = page.getByTestId('password');
+      // this.loginInButton = page.getByTestId('login-submit');
+      this.emailInput = page.locator('[data-test="email"]');
+      this.passwordInput = page.locator('[data-test="password"]');
+      this.loginInButton = page.locator('[data-test="login-submit"]');
    }
 
    async goto() {
@@ -19,6 +22,7 @@ export class LoginPage {
 
    async login(email: string, password: string)
    {
+        console.log(`Logging in with email: ${email} and password: ${password}`);
         await this.emailInput.fill(email);
         await this.passwordInput.fill(password);
         await this.loginInButton.click();

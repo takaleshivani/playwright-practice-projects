@@ -4,15 +4,20 @@
   "main": "index.js",
   "scripts": {
     "start": "cd bagel-shop && npm run start",
-    "install:bagel-shop": "cd bagel-shop && npm install"
+    "install:bagel-shop": "cd bagel-shop && npm install",
+    "test": "cucumber-js"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "description": "",
   "devDependencies": {
-    "@playwright/test": "^1.55.1",
+    "@cucumber/cucumber": "^12.2.0",
+    "@cucumber/html-formatter": "^22.0.0",
+    "@playwright/test": "^1.56.0",
     "@types/node": "^24.6.2",
-    "dotenv": "^17.2.3"
+    "dotenv": "^17.2.3",
+    "ts-node": "^10.9.2",
+    "tsconfig-paths": "^4.2.0"
   }
 }
