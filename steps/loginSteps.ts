@@ -1,3 +1,12 @@
+/**
+ * Step definitions for login scenarios using Cucumber and Playwright.
+ *
+ * - Registers a new user via API.
+ * - Navigates to the login page and performs login actions.
+ * - Verifies successful login using UI assertions.
+ * - Manages browser and page lifecycle for each scenario.
+ * - Uses path aliases and environment variables for configuration.
+ */
 import { Given, When, Then, Before, After } from "@cucumber/cucumber";
 import { registerUser } from "@datafactory/register";
 import { LoginPage } from "@pages/login/login.page";
@@ -21,10 +30,10 @@ Before({ timeout: 30000 }, async function () {
   loginPage = new LoginPage(page);
 });
 
-// After(async function () {
-//   if (page && !page.isClosed()) await page.close();
-//   if (browser) await browser.close();
-// });
+After(async function () {
+  if (page && !page.isClosed()) await page.close();
+  if (browser) await browser.close();
+});
 
 // --------------------- STEPS ---------------------
 Given("the new user is registered using api", async function () {
